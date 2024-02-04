@@ -7,5 +7,5 @@ from shuffle.functions import python_shuffle
 class Shuffler(APIView):
     def post(self, request):
         input: List[any] = request.data["input"]
-        output = python_shuffle(input)
-        return Response(output)
+        response = {'data': python_shuffle(input)}
+        return Response(response)
