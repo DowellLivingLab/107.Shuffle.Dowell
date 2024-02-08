@@ -8,6 +8,7 @@ def python_shuffle(array: List[any]) -> List[any]:
 
 def api_suffle(array: List[any]) -> List[any]:
     #TODO call the api to shuffle the array 
+    
     return array.copy()
 
 
